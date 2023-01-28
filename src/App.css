@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  background: hsl(218, 23%, 16%);
+  overflow-x: hidden;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background: hsl(217, 19%, 24%);
+  width: 343px;
+  height: 315px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  transition: all 0.3s ease-in-out;
+  
+}
+.card:hover{
+  box-shadow: 0 10px 10px rgba(83, 255, 169, 0.1);
+}
+.card h1 {
+  font-size: 0.8rem;
+  color: hsl(150, 100%, 66%);
+  padding-bottom: 37px;
+}
+.card .text {
+  font-size: 17px;
+  color: hsl(193, 38%, 86%);
+  text-align: center;
+  padding-bottom: 17px;
+}
+.card picture{
+  padding: 17px 0;
+}
+.card .dice {
+  background: hsl(150, 100%, 66%);
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 320px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card .dice:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 10px rgba(83, 255, 169, 0.5);
+}
+main .credits {
+  font-size: 12px;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+  position: absolute;
+  margin-top: 480px;
+}
+main .credits a{
+  text-decoration: none;
+  color: hsl(150, 100%, 66%);
+}
+@media (min-width: 600px) {
+  .card{
+    border-radius: 15px;
+    height: 332px;
+    width: 540px;
+   
+  }
+  .card .text{
+    font-size: 22px;
+  }
+
+}
